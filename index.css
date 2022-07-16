@@ -1,0 +1,473 @@
+* {
+    margin: 0%;
+    font-family: THICCCBOI-Regular;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-light: #ffffff;
+    --clr-dark: #131E2A;
+    --clr-primary: #189159;
+    --clr-secondary: #0072C4;
+    --clr-accent: #D72F0F;
+  
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
+}
+
+.dark {
+    --clr-light: #ffffff;
+    --clr-dark: #131E2A;
+    --clr-primary: #189159;
+    --clr-secondary: #0072C4;
+    --clr-accent: #D72F0F;
+  
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+@font-face {
+    font-family: THICCBOI;
+    src: url('www.chasemcgee.com/THICCBOI/THICCCBOI-Regular.ttf');
+}
+
+h1 {
+    font-family: THICCCBOI-Regular;
+    text-align: center;
+}
+
+.hello {
+    margin-top: 50px;
+}
+
+#homeaboutdiv {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: auto;
+}
+
+#homeimg {
+    width: 45%;
+    }
+
+#homeabout {
+    width: 45%;
+}
+
+#homep {
+    font-family: lato;
+    margin-top: 25px;
+}
+
+#chase {
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-right: 30px;
+    max-width: fit-content;
+    width: 45%;
+    float: right;
+}
+
+@media (max-width: 858px) {
+    #homeaboutdiv {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #chase {
+        float: center;
+        width: 90%;
+    }
+
+    #homep {
+        width: 90%;
+    }
+
+    #homeabout {
+        width: 90%;
+    }
+}
+
+button {
+    font-family: THICCCBOI-Regular;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 30px;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+
+div {}
+
+.buttons {}
+
+#buttondiv {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: auto;
+}
+
+#aboutmebutton {
+    background-color: var(--clr-primary);
+    border-color: var(--clr-primary);
+}
+
+#projectsbutton {
+    background-color: var(--clr-secondary);
+    border-color: var(--clr-secondary);
+}
+
+#contactmebutton {
+    background-color: var(--clr-accent);
+    border-color: var(--clr-accent);
+}
+
+#middle column {
+    float: left;
+    width: 50%;
+}
+
+nav {
+    width: 100%;
+    background-color: #131E2A;
+    height: 80px;
+}
+
+label.logo {
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-family: THICCCBOI-regular;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active,
+a:hover {
+    background: #2F4765;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #33A9FF;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #131E2A;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+.head {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.headhr {
+    width: 20%;
+    margin: auto;
+    margin-top: 15px;
+    color: var(--clr-secondary);
+    background-color: var(--clr-secondary);
+    height: 3px;
+}
+
+.aboutmediv {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.aboutmetitle {
+    flex-basis: 50%;
+}
+
+.aboutmebullets {
+    flex-basis: 50%;
+    padding-right: 60px;
+}
+
+@media (max-width: 858px) {
+    .aboutmediv {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .aboutmetitle {
+      width: 80%;
+    }
+
+    .aboutmebullets {
+        width: 80%;
+    }
+}
+
+.aboutmediv h2 {
+    text-align: center;
+}
+
+.aboutmediv li {
+    list-style-type: disc;
+}
+
+.aboutmediv ul {
+    margin-left: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 300px;
+    margin: 10px;
+    border: 3px solid #189159;
+    background-color: var(--background);
+    border-radius: 5px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.box button {
+    background-color: #189159;
+}
+
+.box p {
+    margin-top: 5px;
+}
+
+.box h2 {
+    margin-top: 5px;
+}
+
+.contactcontainer {
+    width: 60%;
+    padding: 12px;
+    border: 3px solid #D72F0F;
+    margin: 15px;
+    resize: vertical;
+    background-color: var(--background);
+    box-sizing: border-box;
+}
+
+.contactcontainer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.contactcontainer input {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 80%;
+    display: ;
+}
+
+#name,
+#email,
+#phone {
+    height: 30px;
+}
+
+.contactcontainer select {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: ;
+    width: 80%;
+}
+
+.contactcontainer label {
+    float: left;
+    display: ;
+}
+
+.contactcontainer textarea {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 75px;
+    display: ;
+    width: 80%;
+}
+
+#submit {
+    background-color: var(--clr-primary);
+    border-color: var(--clr-primary);
+    font-family: THICCCBOI-Regular;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 30px;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+
+#linkedin {
+    margin-bottom: 150px;
+    ;
+}
+
+
+#darkmode {
+    position: fixed;
+    bottom: 0;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--clr-accent);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--clr-accent);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- https://www.youtube.com/watch?v=oLgtucwjVII -->
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Chase McGee</label>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a class="active" href="contactme.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="hello">Contact Me</h1>
+    <p class="head">Need to reach me? Please use the contact <br> form below or email me at chase@chasemcgee.com. <br> If you need to reach me for DSI360, please
+        email <br>me at chase@dsi360.com.</p>
+    <hr class="headhr">
+
+
+        <center><div class="contactcontainer">
+            <form>
+                <label for="name">First Name</label>
+               
+                <input type="text" id="name" name="fullname" placeholder="Full Name">
+                
+                <label for="email">Email</label>
+                
+                <input type="email" id="email" name="email" placeholder="Email">
+               
+                <label for="phone">Phone</label>
+                
+                <input type="phone" id="phone" name="phone" placeholder="Phone">
+                
+                <label for="type">How would you like a response?</label>
+                
+                <select id="type" name="type">
+                    <option value="phone">Phone</option>
+                    <option value="text">Text</option>
+                    <option value="email">Email</option>
+                </select>
+               
+                <label for="message">Message</label>
+               
+                <textarea id="message" name="message" placeholder="Message"></textarea>
+                
+                <input type="submit" value="Submit" class="submit" id="submit">
+            </form>
+        </div>
+        <a href='https://www.linkedin.com/in/chase-mcgee/' target="_blank"><img id="linkedin" src="linkedin.png"></a>
+    </center>
+
+    
+
+
+</body>
